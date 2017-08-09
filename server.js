@@ -9,11 +9,16 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+// code added by sameer but not working 
+
+
 var counter = 1;
 app.get('/counter', function(req,res){
 counter = counter + 1;
 res.send(counter,toString());
 });
+
+// till here
 
 app.get('/article-one', function(req,res)
 {res.send('Article one/1 requested and will be served here');
