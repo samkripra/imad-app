@@ -16,7 +16,10 @@ var counter = 1;
 app.get('/counter', function(req,res){
 counter = counter + 1;
 res.send(counter,toString());
-};
+});
+app.get('/test-db', function(req,res){
+    
+});
 
 // till here
 
